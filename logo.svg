@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">LeDen logo</title>
+  <desc id="desc">Dark green and gold premium retail badge with a stylised lion-inspired monogram.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#315f49"/>
+      <stop offset="0.65" stop-color="#173c2c"/>
+      <stop offset="1" stop-color="#0f2a1e"/>
+    </radialGradient>
+  </defs>
+  <circle cx="256" cy="256" r="244" fill="url(#bg)" stroke="#c99a3c" stroke-width="10"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#c99a3c" stroke-width="3" opacity=".9"/>
+  <g fill="#c99a3c">
+    <path d="M256 104c-70 0-127 57-127 127 0 46 24 86 61 108l-19 53 61-30c8 2 16 3 24 3s16-1 24-3l61 30-19-53c37-22 61-62 61-108 0-70-57-127-127-127zm0 42c47 0 85 38 85 85 0 34-20 63-49 77l-36 17-36-17c-29-14-49-43-49-77 0-47 38-85 85-85z" opacity=".95"/>
+    <path d="M212 197c10-17 27-27 44-27s34 10 44 27l-19 7c-7-8-15-12-25-12s-18 4-25 12l-19-7zm4 33h80l-10 63c-2 13-13 23-27 23h-6c-14 0-25-10-27-23l-10-63zm24 20 6 39h20l6-39h-32z"/>
+    <circle cx="225" cy="224" r="7"/>
+    <circle cx="287" cy="224" r="7"/>
+  </g>
+  <text x="256" y="435" fill="#f6f1e6" text-anchor="middle" font-size="48" font-weight="700" font-family="Georgia,serif" letter-spacing="3">LeDen</text>
+</svg>
