@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173c2c">
+  <meta name="description" content="LeDen simple WhatsApp-first shop in Kampala.">
+  <title>LeDen — Simple shopping on WhatsApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="LeDen home">
+    <span class="brand-mark" aria-hidden="true">L</span>
+    <span><strong>LeDen</strong><small>Simple. Local. Easy.</small></span>
+  </a>
+  <button class="cart-button" id="cartButton" type="button" aria-label="Open order basket">Order <span id="cartCount">0</span></button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">ORDER DIRECT ON WHATSAPP</p>
+      <h1>Everyday essentials, without the complicated checkout.</h1>
+      <p>Pick what you need, add it to your order, then send everything to LeDen on WhatsApp in one tap.</p>
+      <a class="primary-button" href="#products">Shop products</a>
+    </div>
+    <div class="hero-badge" aria-hidden="true">
+      <div class="lion">♌</div>
+      <span>LeDen</span>
+    </div>
+  </section>
+
+  <section class="shop-section" id="products">
+    <div class="section-heading">
+      <div><p class="eyebrow">CURRENT PRODUCTS</p><h2>Shop LeDen</h2></div>
+      <p>Prices and availability can be confirmed on WhatsApp before delivery.</p>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <section class="how-it-works">
+    <article><b>1</b><h3>Choose</h3><p>Add one or more products.</p></article>
+    <article><b>2</b><h3>Review</h3><p>Adjust quantities in your order.</p></article>
+    <article><b>3</b><h3>WhatsApp</h3><p>Send the complete order to LeDen.</p></article>
+  </section>
+</main>
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="drawer-head"><div><p class="eyebrow">YOUR ORDER</p><h2>Order basket</h2></div><button class="close-button" id="closeCart" aria-label="Close basket">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="customer-fields">
+    <label>Name<input id="customerName" autocomplete="name" placeholder="Your name"></label>
+    <label>Delivery area<input id="customerArea" placeholder="e.g. Ntinda, Kampala"></label>
+  </div>
+  <div class="cart-total"><span>Estimated total</span><strong id="cartTotal">UGX 0</strong></div>
+  <button class="whatsapp-button" id="sendWhatsApp">Send order on WhatsApp</button>
+  <p class="fine-print">WhatsApp opens with your order already written. You can review it before sending.</p>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+
+<footer><span>LeDen</span><a href="owner.html">Owner</a><span>WhatsApp: 0701 461 648</span></footer>
+<script src="app.js"></script>
+</body>
+</html>
