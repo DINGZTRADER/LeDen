@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>LeDen Owner — Product Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">L</span><span><strong>LeDen</strong><small>Owner prototype</small></span></a>
+  <a class="primary-button" href="index.html">View shop</a>
+</header>
+<main class="owner-main">
+  <div class="owner-top"><div><p class="eyebrow">OWNER DEMO</p><h1>Manage products</h1><p>This prototype stores changes on this device only. No database or paid service is connected yet.</p></div></div>
+  <section class="owner-card">
+    <h2>Add a product</h2>
+    <form id="productForm">
+      <div class="owner-grid">
+        <label>Product name<input id="productName" required maxlength="60" placeholder="e.g. Tomatoes"></label>
+        <label>Price (UGX)<input id="productPrice" required type="number" min="0" step="100" placeholder="5000"></label>
+      </div>
+      <label>Description<textarea id="productDescription" maxlength="180" placeholder="Short customer-friendly description"></textarea></label>
+      <label>Product photo<input id="productImage" type="file" accept="image/jpeg,image/png,image/webp"></label>
+      <div class="owner-actions"><button class="save-button" type="submit">Add product</button><button class="secondary-button" id="resetStarter" type="button">Restore starter products</button></div>
+      <p class="status" id="status" aria-live="polite"></p>
+    </form>
+  </section>
+  <section class="owner-card"><h2>Current products</h2><div id="ownerProducts"></div></section>
+</main>
+<footer><span>LeDen owner prototype</span><a href="index.html">Customer shop</a><span>WhatsApp: 0701 461 648</span></footer>
+<script src="owner.js"></script>
+</body>
+</html>
